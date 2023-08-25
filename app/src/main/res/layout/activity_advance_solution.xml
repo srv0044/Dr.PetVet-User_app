@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_bk_color"
+    tools:context=".AdvanceSolution"
+    android:layout_gravity="center"
+    android:focusableInTouchMode="true"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="For the\nmore advance\nProblem Solution"
+                    android:textColor="@color/whiteTextColor"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/solution"/>
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="490dp"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/whiteTextColor"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="480dp"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/videocall"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="140dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/videocall"/>
+
+                    <Button
+                        android:id="@+id/pay1"
+                        style="@style/loginButton"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="Video Call"/>
+
+                    <ImageView
+                        android:id="@+id/appoint"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="140dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/appoint"/>
+
+                    <Button
+                        android:id="@+id/pay2"
+                        style="@style/loginButton"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="Booking Appointment"/>
+
+                    <ImageView
+                        android:id="@+id/visit"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="140dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/doc"/>
+
+                    <Button
+                        android:id="@+id/pay3"
+                        style="@style/loginButton"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="Home Visit" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--<ImageView
+        android:id="@+id/comp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="104dp"
+        android:src="@drawable/ic_computer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topText"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/pay1"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:background="@drawable/round_bg2"
+        android:gravity="center"
+        android:text="@string/video_call"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/appoint"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pay1"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/pay2"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round_bg2"
+        android:fontFamily="@font/akaya_telivigala"
+        android:gravity="center"
+        android:text="@string/pay_for_appoint"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appoint"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/visit"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pay2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/pay3"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round_bg2"
+        android:fontFamily="@font/akaya_telivigala"
+        android:gravity="center"
+        android:text="@string/pay_for_appoint"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/visit"
+        tools:ignore="MissingConstraints" />!-->
+
+</RelativeLayout>
